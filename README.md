@@ -1,4 +1,4 @@
-
+stdgr needs products api, They take customer or inline products data and merged two form for list and product details. use express hbs engine and json data api
 ```
 const productLayers = [
   {
