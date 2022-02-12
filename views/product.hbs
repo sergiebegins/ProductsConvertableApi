@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mt-4 p-3 text-center mx-auto">
+        <h4>{{product.title}}</h4>
+        <p>{{product.description}}</p>
+            <div class="row">
+            {{#each product.tags}}
+                <div class="col-md-2 mx-auto">
+                    <div class="alert alert-primary">
+                        {{this}}
+                    </div>
+                </div>
+            {{/each}}
+            </div>
+            <div class="row">
+    {{#each product.images}}
+                <div class="col-md-3 mx-auto">
+                  <img src="{{this.src}}" class="w-100">
+                </div>
+    {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
